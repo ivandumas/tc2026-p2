@@ -6,7 +6,9 @@ const ConsolaVideojuego = (sequelize)=>{
             allowNull: false,
             primaryKey: true
         },
-        lanzamiento: Sequelize.STRING
+        lanzamiento: Sequelize.STRING,
+        videojuegoId: Sequelize.INTEGER,
+        consolaId: Sequelize.INTEGER
     })
 }
 

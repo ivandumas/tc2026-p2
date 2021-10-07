@@ -47,8 +47,9 @@ exports.postActualizarVC = (req, res)=>{
     console.log(req.body)
     
     VC.update({
-        nombre: req.body.nombre
-        
+        nombre: req.body.nombre,
+        videojuegoId: req.body.videojuegoId,
+        consolaId : req.body.consolaId
     },{
         where:{
             id:req.body.id
