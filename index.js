@@ -2,6 +2,7 @@
 const express = require("express")
 const vjRoutes = require('./routes/videojuegos')
 const cRoutes = require('./routes/consolas')
+const vcRoutes = require('./routes/consolaVideojuegos')
 const sequelize = require('./utils/database')
 //Creación de la aplicación web
 const app = express();
@@ -12,6 +13,7 @@ app.use(express.urlencoded({extended:true}))
 
 app.use("/videojuegos",vjRoutes);
 app.use("/consolas",cRoutes);
+app.use("/vc",vcRoutes);
 
 app.get("/prueba",(req,res)=>{
     res.send("Prueba del servidor funcionando")

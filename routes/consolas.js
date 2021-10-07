@@ -1,15 +1,15 @@
 const express = require('express')
 //Mini aplicacion de express
 const router = express.Router()
-const vjController = require('../controllers/consolas')
+const cController = require('../controllers/consolas')
 
 //Servicio para procesar los datos del formulario  CREATE
-router.post('/agregarConsola',vjController.postAgregarConsola)
+router.post('/agregarConsola',cController.postAgregarConsola)
 //Consulta de consolas READ
-router.get('/obtenerConsolas',vjController.getObtenerConsolas)
+router.get('/obtenerConsolas',cController.getObtenerConsolas)
 //Eliminar consola DELETE
-router.post('/borrarConsola',vjController.postBorrarConsola)
+router.post('/borrarConsola',cController.postBorrarConsola)
 //Actualizar consola UPDATE
-router.post('/actualizarConsola',vjController.postActualizarConsola)
+router.post('/actualizarConsola',cController.postActualizarConsola)
 
 module.exports = router
