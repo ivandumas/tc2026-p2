@@ -52,7 +52,7 @@ exports.postActualizarVC = (req, res)=>{
         consolaId : req.body.consolaId
     },{
         where:{
-            id:req.body.id
+            idCV:req.body.idCV
         }
     })
     .then(()=>{
