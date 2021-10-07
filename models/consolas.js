@@ -6,7 +6,11 @@ const Consola = (sequelize)=>{
             allowNull: false,
             primaryKey: true
         },
-        nombre:Sequelize.STRING
+        nombre:Sequelize.STRING,
+        // lanzamiento:{
+        //     type:Sequelize.INTEGER,
+        //     allowNull:true
+        // }
     })
 }
 
